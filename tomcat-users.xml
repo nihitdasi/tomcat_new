@@ -1,0 +1,7 @@
+<role rolename="manager-gui"/>
+<role rolename="manager-script"/>
+<role rolename="manager-jmx"/>
+<role rolename="manager-status"/>
+<user username="admin" password="admin" manager-gui, manager-script, manager-jmx, manager-script"/>
+<user username="deployer" password="deployer" manager-script"/>
+<user username="tomcat" password="s3cret" manager-gui"/>
