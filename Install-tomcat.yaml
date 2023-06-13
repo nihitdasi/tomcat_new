@@ -6,12 +6,12 @@
    - name: Download Open JDK
      apt:
       name: openjdk-8-jdk-headless
-      update_cache: false
+      update_cache: yes
       state: present
    - name:  install net-tools
      apt:
       name: net-tools
-      update_cache: false
+      update_cache: yes
       state: present
    - name: Create the group
      group: 
