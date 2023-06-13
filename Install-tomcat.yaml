@@ -75,7 +75,7 @@
        - Restart tomcat
    - name: copy host manager context.xml
      copy:
-        src: context.xml
+        src: hostmanager-context.xml
         dest: /opt/apache-tomcat-9.0.76/webapps/host-manager/META-INF
      #   remote_src: yes
      notify: 
