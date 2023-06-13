@@ -67,7 +67,7 @@
 
    - name: copy manager context.xml
      copy:
-        src: /home/ubuntu/context.xml
+        src: context.xml
         dest: /opt/apache-tomcat-9.0.76/webapps/manager/META-INF
     #    remote_src: yes
      notify:
@@ -75,7 +75,7 @@
        - Restart tomcat
    - name: copy host manager context.xml
      copy:
-        src: /home/ubuntu/context.xml
+        src: context.xml
         dest: /opt/apache-tomcat-9.0.76/webapps/host-manager/META-INF
      #   remote_src: yes
      notify: 
