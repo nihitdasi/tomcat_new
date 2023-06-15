@@ -14,11 +14,11 @@
       state: present
    - name: Create the group
      group: 
-      name: www-data
+      name: nihit_group
       state: present
    - name: Create the user
      user:
-        name: www-data
+        name: nihit_group
         state: present
    - name: Download Tomcat
      get_url:  
@@ -30,8 +30,8 @@
       src: /tmp/apache-tomcat-9.0.76.tar.gz 
       dest: /opt/
       mode: 0755
-      group: www-data
-      owner: www-data
+      group: nihit_group
+      owner: nihit_group
       remote_src: yes
 
    - name: Copy the user role tomcat-users.xml
